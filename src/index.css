@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Primary Portfolio Colors - Dark Theme */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+    
+    /* Surface Colors */
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Brand Colors - Purple Accent */
+    --primary: 267 83% 65%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 98%;
+    
+    /* Neutral Colors */
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 0 0% 14%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Border & Input */
+    --border: 0 0% 20%;
+    --input: 0 0% 14%;
+    --ring: 267 83% 65%;
+    
+    /* Design System Extensions */
+    --surface: 0 0% 10%;
+    --surface-elevated: 0 0% 12%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(267 83% 65%), hsl(280 85% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 6%), hsl(267 20% 10%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%), hsl(267 15% 12%));
+    
+    /* Shadows */
+    --shadow-lg: 0 10px 25px -3px hsl(0 0% 0% / 0.5), 0 4px 6px -2px hsl(0 0% 0% / 0.1);
+    --shadow-primary: 0 8px 30px hsl(267 83% 65% / 0.4);
+    --shadow-card: 0 4px 15px hsl(267 30% 10% / 0.3);
+    
+    /* Typography */
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Animation Timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Light theme (optional override) */
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 144 100% 98%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 100%), hsl(240 4.8% 95.9%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 4.8% 95.9%));
+    --shadow-card: 0 4px 15px hsl(240 10% 3.9% / 0.1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Navigation Styles */
+  .nav-link {
+    @apply text-muted-foreground hover:text-foreground transition-colors duration-300 relative;
+  }
+  
+  .nav-link.active {
+    @apply text-primary;
+  }
+  
+  .nav-link.active::after {
+    @apply content-[''] absolute bottom-0 left-0 w-full h-0.5 bg-primary;
+  }
+  
+  /* Hero Styles */
+  .hero-title {
+    @apply text-5xl md:text-7xl font-bold;
+    font-family: var(--font-display);
+  }
+  
+  .hero-title .accent {
+    @apply bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent;
+  }
+  
+  .hero-greeting {
+    @apply text-lg md:text-xl font-semibold text-primary uppercase tracking-wider;
+  }
+  
+  .hero-subtitle {
+    @apply text-xl md:text-2xl text-muted-foreground font-medium;
+  }
+  
+  /* Button Variants */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-lg font-semibold;
+    @apply transform hover:scale-105 transition-all duration-300;
+    @apply shadow-lg hover:shadow-primary;
+    background: var(--gradient-primary);
+  }
+  
+  .btn-secondary {
+    @apply border border-border hover:bg-accent text-foreground px-8 py-4 rounded-lg font-semibold;
+    @apply transform hover:scale-105 transition-all duration-300;
+  }
+  
+  /* Card Styles */
+  .project-card {
+    @apply bg-surface-elevated border border-border rounded-xl p-6;
+    @apply transform hover:-translate-y-2 transition-all duration-500;
+    @apply hover:shadow-lg hover:border-primary/50;
+    background: var(--gradient-card);
+  }
+  
+  .skill-tag {
+    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium;
+    @apply border border-primary/20;
+  }
+  
+  .skill-tag-enhanced {
+    @apply bg-background/50 backdrop-blur-sm text-foreground px-4 py-2.5 rounded-xl text-sm font-semibold border border-border/50 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300;
+  }
+  
+  /* Section Styles */
+  .section {
+    @apply py-20 px-4;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-16;
+    font-family: var(--font-display);
+  }
+  
+  /* Form Styles */
+  .form-input {
+    @apply w-full px-4 py-3 bg-surface border border-border rounded-lg;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
+    @apply transition-all duration-300;
+  }
+  
+  .form-textarea {
+    @apply w-full px-4 py-3 bg-surface border border-border rounded-lg resize-none;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
+    @apply transition-all duration-300;
+  }
+  
+  /* Animation Classes */
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+  
+  .fade-in.animate {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .stagger-children > * {
+    @apply transition-all duration-700;
+  }
+  
+  .stagger-children > *:nth-child(1) { @apply delay-100; }
+  .stagger-children > *:nth-child(2) { @apply delay-200; }
+  .stagger-children > *:nth-child(3) { @apply delay-300; }
+  .stagger-children > *:nth-child(4) { @apply delay-500; }
+}
