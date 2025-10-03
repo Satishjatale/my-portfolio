@@ -13,6 +13,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Index = () => {
   useScrollAnimation();
+  
 
   useEffect(() => {
     // Trigger initial animation for hero section
