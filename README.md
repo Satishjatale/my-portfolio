@@ -31,7 +31,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Satishjatale/portfolio.git
 cd portfolio
 ```
 
@@ -53,10 +53,22 @@ npm run dev
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
 
 ## Deployment
 
-The project can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
+The project is deployed to GitHub Pages and can be accessed at:
+**https://satishjatale.github.io/portfolio**
+
+## Work Experience
+
+### T72 Endeavours Pvt. Ltd. (Jan 2024 – Present)
+- Senior React Native Developer
+- Multi-Feature Fintech App (Live on Play Store & App Store)
+
+### Mobiloitte Technology (2022 – 2023)
+- React Native Developer
+- 4+ projects including Social & Crypto App, CScan Wallet, Olympus AI BOT
 
 ## Contact
 
