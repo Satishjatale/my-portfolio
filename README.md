@@ -1,4 +1,4 @@
-# Satish Jatale - Personal Portfolio
+# My Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS showcasing my experience as a React Native and React.js developer.
 
@@ -31,8 +31,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Satishjatale/portfolio.git
-cd portfolio
+git clone https://github.com/Satishjatale/my-portfolio.git
+cd my-portfolio
 ```
 
 2. Install dependencies:
@@ -58,7 +58,7 @@ npm run dev
 ## Deployment
 
 The project is deployed to GitHub Pages and can be accessed at:
-**https://satishjatale.github.io/portfolio**
+**https://satishjatale.github.io/my-portfolio**
 
 ## Work Experience
 
