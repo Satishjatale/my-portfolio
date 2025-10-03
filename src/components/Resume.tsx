@@ -4,26 +4,26 @@ const Resume = () => {
   const workExperience = [
     {
       id: 1,
-      period: "2024 - Present",
+      period: "Jan 2024 - Present",
       title: "Senior React Native Developer",
-      company: "Fintech Company, Pune",
-      description: "Leading development of comprehensive fintech mobile applications supporting multiple financial services. Architected and implemented payment gateway integrations, real-time API connections, and advanced encryption protocols. Leveraged Firebase ecosystem for notifications, crash analytics, and app reliability monitoring. Delivered modern, accessible UI/UX designs with responsive layouts. Collaborated with cross-functional teams including product managers, designers, and QA engineers for seamless releases.",
+      company: "T72 Endeavours Pvt. Ltd.",
+      description: "T72 Endeavours is part of the global T72 group, focused on acquiring and scaling high-performing businesses with an emphasis on innovation, performance, security, and user experience. Leading development of comprehensive fintech mobile applications supporting multiple financial services. Architected and implemented payment gateway integrations, real-time API connections, and advanced encryption protocols. Leveraged Firebase ecosystem for notifications, crash analytics, and app reliability monitoring. Delivered modern, accessible UI/UX designs with responsive layouts. Collaborated with cross-functional teams including product managers, designers, and QA engineers for seamless releases.",
       isCurrent: true,
       projects: [
         {
-          name: "Multi-Feature Fintech Application",
-          description: "Built and optimized a comprehensive fintech mobile application supporting multiple financial services. Integrated payment gateways, real-time APIs, and encryption protocols. Utilized Firebase for notifications, crash analytics, and app reliability. Delivered modern UI/UX with accessibility & responsiveness. Collaborated with cross-functional teams for smooth releases.",
-          link: "#",
+          name: "Multi-Feature Fintech App (Live on Play Store & App Store)",
+          description: "Built a comprehensive fintech mobile application supporting multiple financial services. Integrated payment gateways, real-time APIs, and encryption protocols. Implemented Firebase for notifications, crash analytics, and reliability. Delivered modern UI/UX with accessibility & responsiveness. Collaborated with cross-functional teams for smooth releases.",
+          link: "#", // TODO: Add Google Play Store link for fintech app
           modules: [
-            "Send Money – secure peer-to-peer transfers",
-            "Top-Up & Recharges – mobile/DTH/data packs", 
-            "Event Ticket Booking – seamless booking flow",
-            "Gift Cards – purchase, share & redeem",
-            "Check Cashing – check scan & digital deposit",
-            "Pay by Barcode – QR/barcode-based payments",
-            "Wire Transfers – domestic & international",
-            "KYC Verification – secure document upload & verification",
-            "Machine/ATM Locator – geolocation-based services"
+            "Send Money",
+            "Top-Up & Recharges", 
+            "Event Ticket Booking",
+            "Gift Cards",
+            "Check Cashing",
+            "Pay by Barcode",
+            "Wire Transfers",
+            "KYC Verification",
+            "Machine/ATM Locator"
           ]
         }
       ]
@@ -32,28 +32,28 @@ const Resume = () => {
       id: 2,
       period: "2022 - 2023",
       title: "React Native Developer",
-      company: "Technology Solutions Company, Pune",
-      description: "Developed and deployed multiple mobile applications across blockchain, Web3, social media, and AI domains. Spearheaded complete UI/UX revamps with modern responsive designs and improved user experience. Integrated complex backend systems including RESTful APIs, WebSocket connections, Firebase services, and Redux state management. Implemented secure blockchain integrations with MetaMask wallet connectivity. Successfully delivered 4+ projects live on Google Play Store and Apple App Store with positive user ratings.",
+      company: "Mobiloitte Technology",
+      description: "Mobiloitte is a leading full-service software development company specializing in Blockchain, Metaverse, AI, BOTS, Mobile & Web Development with a strong focus on timeliness, security, scale, and performance. Developed and deployed multiple mobile applications across blockchain, Web3, social media, and AI domains. Spearheaded complete UI/UX revamps with modern responsive designs and improved user experience. Integrated complex backend systems including RESTful APIs, WebSocket connections, Firebase services, and Redux state management. Implemented secure blockchain integrations with MetaMask wallet connectivity. Successfully delivered 4+ projects live on Google Play Store and Apple App Store with positive user ratings.",
       isCurrent: false,
       projects: [
         {
-          name: "Social & Crypto App - Taral Wallet",
-          description: "Combined social networking + crypto wallet. Revamped UI, added form validations, backend API integration. Live on Play Store & App Store.",
-          link: "https://play.google.com/store/apps/details?id=com.taralwallet"
+          name: "Social & Crypto App (Play Store & App Store)",
+          description: "Social networking + crypto wallet application. Revamped complete UI with validations using React Native & Redux. Integrated RESTful APIs with backend.",
+          link: "#" // TODO: Add Google Play Store link
         },
         {
-          name: "Web3 Decentralized Wallet App - CScan Wallet", 
-          description: "Enabled buying, storing, sending, swapping tokens. Integrated MetaMask + Ethereum (CUSD chain). UI redesigned using Redux for scalability.",
-          link: "https://play.google.com/store/apps/details?id=com.cscanwallet"
+          name: "Web3 Decentralized Wallet App – CScan Wallet (Play Store & App Store)", 
+          description: "Pioneering Web3 wallet for buying, storing, sending & swapping tokens. Redesigned UI/UX and integrated CUSD chain for Ethereum interaction.",
+          link: "#" // TODO: Add Google Play Store link
         },
         {
-          name: "Crypto Trading AI Bot App - Olympus AI Bot",
-          description: "AI-powered platform with prediction tools, MLM, referral system, leaderboards. Real-time market data handling with WebSockets. Integrated wallet, trading plans & backend APIs.",
-          link: "https://play.google.com/store/apps/details?id=com.olympusaibot"
+          name: "Crypto Trading AI BOT App – Olympus AI BOT (Play Store & App Store)",
+          description: "AI bot with prediction, MLM, wallet, plans, referrals & leaderboard. Built UI & integrated REST/WebSocket APIs for market data handling.",
+          link: "#" // TODO: Add Google Play Store link
         },
         {
           name: "Sports News App",
-          description: "Built entire UI from scratch. Integrated REST APIs for live sports content (cricket, football, horse riding).",
+          description: "Entertainment app for sports updates (cricket, football, horse riding, etc.). Developed full UI with validations and integrated REST APIs.",
           link: "#"
         }
       ]

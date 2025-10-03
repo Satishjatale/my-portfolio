@@ -16,7 +16,7 @@ const About = () => {
           <div className="space-y-6 fade-in" style={{ animationDelay: '0.2s' }}>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I am <span className="text-primary font-semibold">Satish Jatale</span>, a passionate and dedicated{' '}
-              <span className="text-primary font-semibold">React Native Developer</span> with 4 years of professional 
+              <span className="text-primary font-semibold">Senior React Native Developer</span> with 4+ years of professional 
               experience in building cross-platform mobile applications for both iOS and Android.
             </p>
             
@@ -24,7 +24,7 @@ const About = () => {
               My expertise lies in <span className="text-primary font-semibold">React Native</span>,{' '}
               <span className="text-primary font-semibold">JavaScript</span>, and{' '}
               <span className="text-primary font-semibold">TypeScript</span>, with strong hands-on skills in developing 
-              fintech applications, cryptocurrency platforms, Web3 decentralized apps, and social networking apps.
+              fintech applications, cryptocurrency platforms, Web3 decentralized apps, and social networking apps. Currently working as a Senior React Native Developer at T72 Endeavours Pvt. Ltd.
             </p>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
